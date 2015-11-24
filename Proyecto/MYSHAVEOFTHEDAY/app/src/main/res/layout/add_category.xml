@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@android:color/background_light">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Add Category"
+            android:id="@+id/textView9"
+            android:layout_gravity="center_horizontal"
+            android:textSize="50dp"
+            android:textColor="#457AB1" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Name:"
+                android:id="@+id/textView10"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="70dp" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/txtname_cat"
+                android:layout_alignBottom="@+id/textView10"
+                android:layout_alignStart="@+id/txtdes_cat" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Description:"
+                android:id="@+id/textView11"
+                android:layout_below="@+id/textView10"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="45dp" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/txtdes_cat"
+                android:layout_alignBottom="@+id/textView11"
+                android:layout_alignParentEnd="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Select a Type:"
+                android:id="@+id/textView12"
+                android:layout_below="@+id/textView11"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="40dp" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Disponsable"
+                android:id="@+id/chec_disp_cat"
+                android:layout_marginTop="37dp"
+                android:layout_below="@+id/textView12"
+                android:layout_toStartOf="@+id/txtdes_cat"
+                android:checked="false" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Consumable"
+                android:id="@+id/chec_cons_cat"
+                android:layout_alignTop="@+id/chec_disp_cat"
+                android:layout_toEndOf="@+id/chec_disp_cat"
+                android:layout_marginStart="32dp"
+                android:checked="false" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Non_Consumable"
+                android:id="@+id/chec_noco_cat"
+                android:layout_marginTop="35dp"
+                android:layout_below="@+id/chec_disp_cat"
+                android:layout_centerHorizontal="true"
+                android:checked="false" />
+
+            <ImageButton
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/imgbtn_addcategory"
+                android:src="@drawable/plus"
+                android:layout_below="@+id/chec_noco_cat"
+                android:layout_toEndOf="@+id/chec_disp_cat"
+                android:layout_marginTop="35dp"
+                android:background="@null" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

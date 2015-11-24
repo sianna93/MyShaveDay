@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="500dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/background_light">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/txtname_a" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:inputType="date"
+            android:ems="10"
+            android:id="@+id/txtdate"
+            android:layout_gravity="center_horizontal" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:id="@+id/txtprice"
+            android:layout_gravity="center_horizontal" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:inputType="date"
+            android:ems="10"
+            android:id="@+id/txtlastused" />
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/imageViewArticles"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/image" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spin_add_Category"
+            android:layout_gravity="center_horizontal"
+            android:spinnerMode="dropdown" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spin_add_type"
+            android:layout_gravity="center_horizontal" />
+
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/image_save"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/plus"
+            android:background="@null" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Add Articles"
+        android:id="@+id/textView2"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#457AB1" />
+</RelativeLayout>
